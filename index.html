@@ -692,37 +692,76 @@
 						"Lave linge": "lave-linge", "Sèche linge": "seche-linge", "Lave vaisselle": "lave-vaisselle", "Four": "four", "Micro ondes": "micro-ondes", "Plaque de cuisson": "plaque-cuisson",
 						"Hotte": "hotte", "Sonnerie": "sonnerie", "Interrupteur différentiel": "interrupteur-differentiel", "Interphone": "interphone", "VMC": "vmc",
 						"Disjoncteur": "disjoncteur", "Radiateur":"radiateur", "Climatiseur":"climatiseur","Chauffe eau":"chauffe-eau", "Contacteur HP/HC":"contacteur-hphc", 
-						"Chargeur de voiture":"chargeur-voiture","Volets":"volets","Réfrigérateur":"refrigerateur","Congélateur":"congelateur"
+						"Chargeur de voiture":"chargeur-voiture","Volets":"volets","Réfrigérateur":"refrigerateur","Congélateur":"congelateur","Interrupteur différentiel disjoncteur": "interrupteur-differentiel","Parafoudre": "interrupteur-differentiel",
 					},
 					emplacements: ['', 'Atelier', 'Buanderie', 'Bureau', 'Cave', 'Cellier', 'Chambre', 'Couloir', 'Cuisine', 'Entrée', 'Extérieur', 'Garage', 'Grenier', 'Salle à manger', 'Salle de bain', 'Salon', 'WC'],
 					taille: 13,
 					rangees: [
 						{
 							modules: [
-								{ app: "Interrupteur différentiel", loc: "Général", mod: 2 },
-								{ app: "Disjoncteur", loc: "Tableau Cuisine" },
-								{ app: "Disjoncteur", loc: "Tableau Principal" },
-								{ app: "Prise de courant", loc: "Ch. Garage" },
-								{ app: "Prise de courant", loc: "S<span class='font-8'>alle de </span>Bain\nCh. Rue\nCh. Jardin" },
-								{ app: "Prise de courant", loc: "Ch. Jardin\nBureau\nCh. Garage" },
-								{ app: "Prise de courant", loc: "Ch. Garage Garage" },
-								{ app: "Éclairage", loc: "S<span class='font-8'>alle de Bain</span> Ch. Rue\nCh. Jardin Bureau Sonnette" },
-								{ app: "Éclairage", loc: "Palier\nCh. Garage Grenier" },
-								{ app: "Télérupteur", loc: "Palier" },
-								{ img: "sonnerie", app: "Transformateur Sonnette", loc: "Hall", mod: 2 },
+								{ app: "Interrupteur différentiel", loc: "CHAUFFAGE & ENERGIE", mod: 2, col : "ocre"  },
+								{ app: "Radiateur", loc: "Sejour Entrée (zone J)" },
+								{ app: "Radiateur", loc: "Sejour Garage (zone J)" },
+								{ app: "Radiateur", loc: "Chambre 1\nChambre 2 \n(zone N)" },
+								{ app: "Radiateur", loc: "Chambre 3\nChambre 4 \n(zone N)" },
+								{ app: "Radiateur", loc: "Salle de bains" },
+								{ app: "Disjoncteur", loc: "COUPURE des fils pilotes" },
+								{ app: "Prise de courant", loc: "COFFRET com." },
+								{ app: "Disjoncteur", loc: "CUMULUS" },
+								{ app: "Radiateur", loc: "Chambre 5", col:"bleu"  },
+								{ app: "Disjoncteur", loc: "EDF/ENR PANNEAU SOLAIRE", col : "rouge" },
+								{ app: "Climatiseur", loc: "PAC Sejour" },
 							]
 						}, {
-							modules: [
-								{ app: "Prise de courant", loc: "Salon" },
-								{ app: "Prise de courant", loc: "Cuisine" },
-								{ app: "Chaudière", loc: "Garage" },
-								{ app: "Éclairage", loc: "Cuisine Salon" },
-								{ app: "Éclairage", loc: "Hall\nWC\nGarage" },
-								{ app: "Lave linge", loc: "Garage" },
-								{ img: "prise", app: "Prise 20A", loc: "Garage" },
-								{ app: "Non utilisé" },
-								{ app: "Télérupteur", loc: "Garage" },
-								{ app: "Télérupteur", loc: "Hall" }
+							modules: [						
+							    { app: "Chauffe eau", loc: "ECS désactivé" },
+								{ app: "Chauffe eau", loc: "ECS connecté", col:"bleu" },
+								{ app: "Contacteur HP/HC", loc: "DELTA DORE Calybox", mod: 3 },
+								{ app: "Interrupteur différentiel", loc: "Cuisine", mod: 2 , col : "ocre" },
+								{ app: "Plaque de cuisson", loc: "Plaque Induction" },
+								{ app: "Lave linge", loc: "S.D.B. Adoucisseur d'eau" },
+								{ app: "Interrupteur différentiel", loc: "GÉNÉRAL", mod: 2 , col : "ocre" },
+								{ app: "Prise de courant", loc: "Chambre 2\n Chambre 3\n Chambre 4" },
+								{ app: "Éclairage", loc: "Chambre 2\n Chambre 3\n Chambre 4"  },								
+							]
+						},{
+							modules: [						
+								{ app: "Prise de courant", loc: "Sejour Garage Terrasse" },
+								{ app: "Éclairage", loc: "Sejour(*)\nChambre 5\Terrasse", col:"bleu" },	
+								{ app: "Prise de courant", loc: "CUISINE petit electro" },
+								{ app: "Prise de courant", loc: "Chambre 5 + Garage"},
+								{ app: "Interrupteur différentiel", loc: "PISCINE", mod: 2, col : "ocre"  },
+								{ app: " ", loc: "Libre" },
+								{ app: "Interrupteur différentiel disjoncteur", loc: "BORNE WALLBOX COPPER SB\nVOITURE ELECTRIQUE", mod: 3 , col : "ocre" },
+								{ app: " ", loc: " " },
+								{ app: " ", loc: " " },
+								{ app: " ", loc: " " },							
+							]
+						}, {
+							modules: [						
+							    { app: "Parafoudre", loc: "PARAFOUDRE", mod: 2, col:"ocre" },
+								{ app: "Interrupteur différentiel", loc: "GÉNÉRAL", mod: 2, col : "ocre"  },
+								{ app: "Prise de courant", loc: "S.D.B.\nChambre 1\nCouloir" },
+								{ app: "Éclairage", loc: "S.D.B. WC\nChambre 1\nCouloir(*)", col:"bleu" },	
+								{ app: "Prise de courant", loc: "Séjour\nEntrée\nCuisine(*)",col:"bleu" },
+								{ app: "Éclairage", loc: "Terrasse Entrée Cuisine(*) Garage", col:"bleu" },	
+								{ app: "VMC", loc: "VMC" },
+								{ app: "Lave vaisselle", loc: "CUISINE Lave vaisselle" },
+								{ app: "Four", loc: "CUISINE Four" },
+								{ app: "Volets", loc: "Sejour Chambre 5"  },								
+							]
+						}, {
+							modules: [						
+							    { app: "Télérupteur", loc: "Couloir"},
+								{ img: "home+control", app: "Domotique", loc: "Domotique Legrand Home+control", mod: 2, col : "bleu"  },
+								{ app: " ", loc: " " },	
+								{ app: "Chargeur de voiture", loc: "Wallbox Ecosmart", col:"bleu", mod: 2 },	
+								{ app: " ", loc: " " },
+								{ app: " ", loc: " " },
+								{ app: " ", loc: " " },										
+								{ app: " ", loc: " " },
+								{ app: " ", loc: " " },
+								{ app: " ", loc: " " },									
 							]
 						}
 					]
@@ -797,7 +836,7 @@
 					}
 				},
 				addRow: function () {
-					let rangee = { modules: [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}] }
+					let rangee = { modules: [{}, {}, {}, {}, {},{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}] }
 					this.rangees.push(rangee);
 				},
 				removeRow: function () {
